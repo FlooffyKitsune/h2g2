@@ -12,7 +12,7 @@
 	--num-grid-columns:12;
 	--page-gutter:24px;
   --section-spacing:120px
-}  
+}
 body {
   text-rendering: optimizeLegibility;
   background: #fff;
@@ -22,7 +22,7 @@ body {
   font-size: 100%;
 }
 .heroBackground {
-  min-height: 626px;
+  height: 626px;
   background-color: 26136E;
   position: relative;
   overflow: hidden;
@@ -123,6 +123,7 @@ body {
   line-height: 120%;
 }
 .heroImageContainer {
+  background-color: #26136E;
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +135,78 @@ body {
 .backgroundImages {
   display: block;
   position: absolute;
+}
+.glow {
+  margin-left: -506px;
+  display: block;
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+}
+.addPlanet {
+  position: absolute;
+  bottom: 0;
+  float: left;
+  display: block;
+  height: auto;
+  transform: none;
+}
+.bottPlanet {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  margin-left: 360px;
+}
+.bluePlanet {
+  margin-top: 200px;
+  margin-left: -600px;
+  display: block;
+  position: absolute;
   top: 0;
+  left: 50%;
+  animation: shift 10s ease-in-out infinite;
+}
+.pinkPlanet {
+  margin-top: 117px;
+  margin-left: -250px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  animation: shift 10s ease-in-out infinite;
+}
+.redPlanet {
+  margin-bottom: 50px;
+  margin-left: -200px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  animation: shift 10s ease-in-out infinite;
+}
+.sagePlanet {
+  margin-top: 60px;
+  margin-left: 745px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  animation: shift 10s ease-in-out infinite;
+}
+@keyframes shift {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0x, 50px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 main {
   margin-left: 5em;
