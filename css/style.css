@@ -119,8 +119,32 @@ body {
 }
 .h1 {
   font-size: 56px;
-  font-weight: 700;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   line-height: 120%;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: .1rem;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 .heroImageContainer {
   background-color: #26136E;
