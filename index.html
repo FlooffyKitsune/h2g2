@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Hitchhiker's Guide to the Galaxy written by Douglas Adams">
+    <meta name="author" content="Jarrett Dominic">
     <title>Hitchhiker's Guide to the Galaxy</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <div class="grid heroBackground">
+    <a href="#top"><img src="/img/assets/up.svg" alt="Up" class="upButton" width="40" height="40"></a>
+    <div class="grid heroBackground" id="top">
         <div class="row header">
             <header class="wrapper">
                 <nav class="nav">
@@ -19,11 +22,20 @@
                     <div class="links">
                         <a href="#book" class="linkSources">The Book</a>
                         <a href="#review" class="linkSources">Reviews</a>
-                        <a href="#summary" class="linkSources">The Author</a>
+                        <a href="#author" class="linkSources">The Author</a>
+                        <a href="#schedule" class="linkSources">Book Signing</a>
                         <a href="#buy" class="linkSources">Where to Buy</a>
                     </div>
+                    <!--
+                        Social Media Links
+                        - Being that the author died, he does not have any social media
+                        - Below is a link to his personal site he used to maintain
+                        - For other social media sites, this could be replicated if they existed
+
+                        target="_blank" is a personal preference for accessability
+                    -->
                     <div class="socButtons">
-                        <a href="https://douglasadams.com/"  target="blank" class="button">
+                        <a href="https://douglasadams.com/"  target="_blank" class="button">
                             <img src="/img/assets/globe.svg" alt="Globe" width="40" height="40">
                         </a>
                     </div>
@@ -33,7 +45,8 @@
         <div class="row heroContainer">
             <div class="heroBody">
                 <div class="heroText">
-                    <h1 class="h1"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+                    <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+                    <noscript><h1>Hitchhiker's Guide to the Galaxy</h1></noscript>
                 </div>
             </div>
         </div>
@@ -48,52 +61,127 @@
         </div>
     </div>
     <main>
-        <div id="summary">
-            <h2>Summary</h2>
-            <div class="book_summ">
-                <img src="/img/HHG2TG.jpg" alt="Book Cover">
-            </div>
-            <div class="book_summ">
-                <p>Arthur Dent starts his day with his house being torn down to make room for a road.  From there, things only take a further turn for the worse as Vogons, an alien construction crew, show up to demolish the planet Earth to make room for an intergalactic highway.  Luckily, his best friend Ford Prefect, a cleverly disguised alien, who has been stranded on Earth for the past 15 years as he writes a revised guide to the galaxy, is able to save him from the demise of the human race by hitching a ride on one of the Vogon ships.  After a rather improbable meeting with Ford’s semi-cousin and president of the galaxy, Zaphod Beeblebrox, the party heads off on a journey to find the mythical planet Magrathea.  Armed with the knowledge contained within the Hitchhiker’s Guide to the Galaxy, an improbability drive, a depressed robot, and a towel, Arthur Dent, Ford Prefect, Zaphod Beeblebrox, and Trillian set off deeper into space.</p>
+        <div class="aboutContainer">
+            <div class="aboutContent">
+                <div class="bookImage">
+                    <div class="slides">
+                        <img src="/img/H2G2.jpg" alt="Book Cover" class="slideshow-img">
+                        <img src="/img/douglas_adams.jpg" alt="Douglas Adams" class="slideshow-img">
+                        <!-- 
+                            <noscript> tags for the win!
+                            Firefox was loading JS even after disabling it
+                            Was able to test site with disabled JS on Chrome
+                        -->
+                        <noscript><img src="/img/H2G2.jpg" alt="Book Cover" class="img-noscript"></noscript>
+                    </div>
+                </div>
+                <div class="aboutText">
+                    <div class="summText">
+                        <h2 id="book">Summary</h2>
+                        <p>Arthur Dent starts his day with his house being torn down to make room for a road.  From there, things only take a further turn for the worse as Vogons, an alien construction crew, show up to demolish the planet Earth to make room for an intergalactic highway.  Luckily, his best friend Ford Prefect, a cleverly disguised alien, who has been stranded on Earth for the past 15 years as he writes a revised guide to the galaxy, is able to save him from the demise of the human race by hitching a ride on one of the Vogon ships.  After a rather improbable meeting with Ford’s semi-cousin and president of the galaxy, Zaphod Beeblebrox, the party heads off on a journey to find the mythical planet Magrathea.  Armed with the knowledge contained within the Hitchhiker’s Guide to the Galaxy, an improbability drive, a depressed robot, and a towel, Arthur Dent, Ford Prefect, Zaphod Beeblebrox, and Trillian set off deeper into space.</p>
+                    </div>
+                    <div class="bioText">
+                        <h2 id="author">About the Author</h2>
+                        <p>In the words of Neil Gaiman, Douglas Adam was a very tall, clumsy, and cheerful person.  Someone who, while exceptionally good at writing, seemed to hate it the more he did it.  He was a genius who not only saw the world differently but was also able to communicate his thoughts.  Born in 1952 in Cambridge, England, Adams was a self-proclaimed “strange child”.  Douglas Noel Adams was an English author, screenwriter, essayist, humorist, satirist, and dramatist.  The concept of the Hitchhiker’s Guide to the Galaxy first came to fruition after a copious amount of drinking while stargazing.  Yet, the idea was forgotten until years later.  He followed this success with The Restaurant at the End of the Universe (1980); Life, The Universe and Everything (1982); So Long and Thanks for all the Fish (1984); and Mostly Harmless (1992).  Douglas died unexpectedly in May 2001 of a sudden heart attack.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="blurbs">
-            <h2>What Authors Have to Say</h2>
-            <div class="quote">
-                <p>The Hitchhiker's Guid to the Galaxy was the funniest thing I had ever read. It wasn’t just hilarious, it was beyond my then mental universe." - Ha-Joon Chang</p>
-            </div>
-            <div class="quote">
-                <p>“I haven’t known many geniuses in my life. Some brilliantly smart people, but only a tiny handful would I class as geniuses. I would class Douglas, because he saw things differently, and he was capable of communicating the way he saw things, and once he explained things the way he saw them, it was almost impossible to see them the way you used to see them.” - Neil Gaiman</p>
-            </div>
-            <div class="quote">
-                <p>"No book better epitomizes the post-heroic tone of sci-fi than Douglas Adams’ The Hitchhiker’s Guide to the Galaxy." - Ted Gioia</p>
-            </div>
-            <div class="quote">
-                <p>"The Hitchhiker's Guide to the Galaxy deserves a special place in the geek pantheon." - Jonathan M. Gitlin</p>
+        <div class="quoteContainer">
+            <h2 class="quoteHeader" id="review">What Authors Have to Say</h2>
+            <div class="quoteContent">
+                <div class="quote1">
+                    <p class="quoteText">The Hitchhiker's Guide to the Galaxy was the funniest thing I had ever read. It wasn’t just hilarious, it was beyond my then mental universe."</p>
+                    <p class="quotePerson">- Ha-Joon Chang</p>
+                </div>
+                <div class="quote2">
+                    <p class="quoteText">“I haven’t known many geniuses in my life. Some brilliantly smart people, but only a tiny handful would I class as geniuses. I would class Douglas, because he saw things differently, and he was capable of communicating the way he saw things, and once he explained things the way he saw them, it was almost impossible to see them the way you used to see them.”</p>
+                    <p class="quotePerson">- Neil Gaiman</p>
+                </div>
+                <div class="quote3">
+                    <p class="quoteText">"No book better epitomizes the post-heroic tone of sci-fi than Douglas Adams’ The Hitchhiker’s Guide to the Galaxy."</p>
+                    <p class="quotePerson">- Ted Gioia</p>
+                </div>
+                <div class="quote4">
+                    <p class="quoteText">"The Hitchhiker's Guide to the Galaxy deserves a special place in the geek pantheon."</p>
+                    <p class="quotePerson">- Jonathan M. Gitlin</p>
+                </div>
             </div>
         </div>
-        <div id="bio">
-            <h2>About the Author</h2>
-            <p>In the words of Neil Gaiman, Douglas Adam was a very tall, clumsy, and cheerful person.  Someone who, while exceptionally good at writing, seemed to hate it the more he did it.  He was a genius who not only saw the world differently but was also able to communicate his thoughts.  Born in 1952 in Cambridge, England, Adams was a self-proclaimed “strange child”.  Douglas Noel Adams was an English author, screenwriter, essayist, humorist, satirist, and dramatist.  The concept of the Hitchhiker’s Guide to the Galaxy first came to fruition after a copious amount of drinking while stargazing.  Yet, the idea was forgotten until years later.  He followed this success with The Restaurant at the End of the Universe (1980); Life, The Universe and Everything (1982); So Long and Thanks for all the Fish (1984); and Mostly Harmless (1992).  Douglas died unexpectedly in May 2001 of a sudden heart attack.</p>
+        <div class="scheduleContainer">
+            <h2 id="schedule">Book Signing Schedule</h2>
+            <div class="scheduleContent">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="schedHeader">Date</td>
+                            <td class="schedHeader">Time</td>
+                            <td class="schedHeader">Location</td>
+                        </tr>
+                        <tr>
+                            <td class="schedBody">December 16</td>
+                            <td class="schedBody">10:00 - 14:00</td>
+                            <td class="schedBody">Milliways</td>
+                        </tr>
+                        <tr>
+                            <td class="schedBody">January 8</td>
+                            <td class="schedBody">12:00 - 16:00</td>
+                            <td class="schedBody">Evildrome Boozarama</td>
+                        </tr>
+                        <tr>
+                            <td class="schedBody">January 21</td>
+                            <td class="schedBody">10:00 - 14:30</td>
+                            <td class="schedBody">Frogstar World B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div id="schedule">
-            <h2>Book Signing Schedule</h2>
-            <p>THIS IS A SCHEDULE</p>
-        </div>
-        <div id="purchase">
-            <h2>Where to Buy</h2>
-            <p>THIS IS A STORE</p>
+        <div class="purchaseContainer">
+            <h2 id="buy">Where to Buy</h2>
+            <div class="purchaseContent">
+                <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B000XUBC2C&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_JjSWFbZCP4MKG" ></iframe>
+                <div class="storeButtons">
+                    <div class="purButton btn1">
+                        <a href="https://amazon.com/gp/product/1400052920?tag=randohouseinc14813-20"  target="_blank" class="button">
+                            <img src="/img/assets/amazon.svg" alt="Amazon" width="150" height="150">
+                        </a>
+                    </div>
+                    <div class="purButton btn2">
+                        <a href="https://www.barnesandnoble.com/w/hitchhikers-guide-to-the-galaxy-douglas-adams/1100152883?ean=9781400052929"  target="_blank" class="button">
+                            <img src="/img/assets/barnesandnoble.svg" alt="Amazon" width="150" height="150">
+                        </a>
+                    </div>
+                </div>
+                <div class="purInfo">
+                    <div class="infoContent">
+                        <p class="purDetails">Book Details</p>
+                        <ul class="purList">
+                            <li>ISBN-13: 9781400052929</li>
+                            <li>Publisher: Crown Publishing Group</li>
+                            <li>Publication date: 08/03/2004</li>
+                            <li>Price: $15.99</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    
     <footer>
-        <p>THIS IS A FOOTER</p>
-    </footer>
-    </div>
+        <div class="links">
+            <a href="#book" class="linkSources">The Book</a>
+            <a href="#review" class="linkSources">Reviews</a>
+            <a href="#author" class="linkSources">The Author</a>
+            <a href="#schedule" class="linkSources">Book Signing</a>
+            <a href="#buy" class="linkSources">Where to Buy</a>
+        </div>
+</footer>
     <script src="/javascript/typewriter.js"></script>
+    <script src="/javascript/slideshow.js"></script>
 </body>
 
 <!--
     <a href="https://www.vecteezy.com/free-vector/galactic">Galactic Vectors by Vecteezy</a>
+    <a href="https://fontawesome.com/license">Font Awesome Icons</a>
 -->
 </html>
