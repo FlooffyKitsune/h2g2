@@ -409,6 +409,7 @@ table tbody tr {
 }
 table tbody tr td{
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .schedHeader {
   font-weight: bold;
@@ -439,14 +440,10 @@ table tbody tr td{
   padding: var(--page-gutter);
 }
 iframe {
-  grid-column: 2 / span 5;
-}
-.purButton {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  grid-column: 3 / span 5;
 }
 .purInfo {
-  grid-column: 9 / span 4;
+  grid-column: 8 / span 4;
 }
 .infoContent {
   border: solid #666 1px;
@@ -464,6 +461,24 @@ iframe {
 .purList li {
   padding: 5px;
   font-size: 1rem;
+}
+.purBtnContainer {
+  margin-top: 7em;
+  padding: 5px 5px 5px 0;
+}
+.purBtnText {
+  border-bottom: solid #ccc 1px;
+  font-weight: bold;
+  color: #333;
+}
+.purBtnContent {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+.purButton {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 footer {
   background-color: #26136E;

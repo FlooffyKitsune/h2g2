@@ -15,7 +15,7 @@ let charIndex = 0;
 
 //when typing or erasing functions are being executed the "cursor" is
 //set to stay solid.  When the animations are idling the "cursor" will
-//blink similar to how typing functions for the user
+//blink similar to how typing functions for the user on a command prompt
 
 //function handles the typing part of the animation
 //handles typing out any text contained in the index
